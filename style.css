@@ -1,0 +1,139 @@
+/* res */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "PT Sans", sans-serif;
+  
+}
+.head {
+  background-image: url(./background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem;
+  color: white;
+}
+.navigation {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+.list-nav a{
+  color: inherit;
+}
+.logo {
+  font-size: 3rem;
+}
+.logo span {
+  color: rgb(250, 35, 7);
+  -webkit-text-stroke: rgb(0, 0, 0) 2px!important;
+}
+.list-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0rem 0.5rem;
+  font-size: 24px;
+}
+.list-nav li {
+  margin: 0.2rem 0.8rem;
+  padding: 0.4rem 1rem;
+  list-style-type: none;
+  background-color: rgba(138, 121, 121, 0.452);
+  border-radius: 1rem;
+}
+#search {
+  height: 2rem
+}
+#select{
+  width: 10rem;
+  height: 2rem;
+  margin-left: 0.3rem;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+.list-nav li:hover {
+  background-color: rgba(204, 203, 203, 0.842);
+  color: black;
+}
+main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 2.5rem;
+  padding-bottom: 1.7rem;
+  gap: 2rem 0rem;
+  background-color: #d6cfb9c9;
+}
+.card {
+  border: 5px solid;
+  border-radius: 1rem;
+  height: auto;
+  width: 350px;
+  text-align: center;
+  background-color: #d6cfb9c9;
+}
+.card-image{
+  padding-top: 0.5rem;
+}
+.epitome{
+  padding: 1rem;
+}
+.card .epitome{
+  opacity: 0;
+  font-weight: bold;
+  transition-duration: 2000ms;
+}
+.card:hover{
+  background-color: rgb(84, 214, 84);
+}
+.card:hover .epitome {
+  opacity: 100;
+}
+.se-ep{
+  display: inline-flexbox;
+  padding-top: 0.5rem;
+  margin: 1rem;
+  font-size: large;
+}
+.link{
+  text-decoration: none;
+  padding: 0.5rem 2.5rem;
+  background-color: rgb(201, 211, 201) ;
+  color: black;
+  font-family: arial;
+  font-weight: bolder;
+}
+.link:hover{
+  background-color: rgba(98, 98, 235, 0.863);
+}
+footer{
+  width: 100%;
+  margin: 1.5rem 0rem;
+}
+.paragraph-footer{
+  padding: 0.5rem 1rem 0rem 2rem;
+}
+#unic{
+  font-size: 24px;
+  font-family: Josefin Sans;
+}
+
+/* page info */
+.about {
+  text-align: center;
+  margin: 20px;
+}
+.about h1 {
+  font-size: 2em;
+}
+.about h2 {
+  font-size: 1.2em;
+  color: #555;
+}
+.about p {
+  font-size: 1em;
+  color: #333;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <title>my info</title>
+  </head>
+  <body>
+
+    <header class="head">
+      <nav class="navigation">
+        <h2 class="logo">APS <span>tv</span></h2>
+        <ul class="list-nav">
+          <li> <a href="."> home</a> </li>
+          <li> <a href="./popular.html"> popular</a> </li>
+          <li> <a href="./info.html"> info me</a> </li>
+          <li id="changeBackground">dark</li>
+          
+          <!-- search -->
+           <input type="text" placeholder="  sarech..." id="search" value="" />
+
+          <!-- list film ha -->
+          <select id="select" >
+            <option>All Episodes</option>
+          </select>
+        </ul>
+      </nav>
+      <!-- matn sar safeh -->
+      <div class="showcase-text">
+        <h1>teame APS</h1>
+        <div class="showcase-text-p">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+            quisquam.
+          </p>
+        </div>
+      </div>
+    </header>
+    
+    <!-- matn asli -->
+    <main>
+        <div class="about">
+            <h1>Hello everyone👋👋</h1>
+            <h2>I am Ali, a young and creative programmer who loves coding and has executed this project.</h2>
+            <p>If you have any comments or suggestions, you can contact me via my Telegram.</p>
+            <a href="tg://resolve?domain=Ali_mallak1">Ali_mallak1</a>
+        </div>
+    </main>
+
+    <footer>
+      <div class="paragraph-footer">
+        <p id="unic">APSignals</p>
+        <p>All rights reserved. 2022 &#9426</p>
+      </div>
+    </footer>
+
+    <script>
+   const btnLightAndDark = document.getElementById("changeBackground");
+   const main = document.querySelector("main");
+  
+  btnLightAndDark.addEventListener("click", () => {
+    if (btnLightAndDark.textContent === "dark") {
+  
+      main.style.backgroundColor = "#181818";
+      btnLightAndDark.textContent = "light";
+    } else if (btnLightAndDark.textContent === "light") {
+    
+      main.style.backgroundColor = "#d6cfb9c9";
+      btnLightAndDark.textContent = "dark";
+    }
+  });
+    </script>
+
+  </body>
+</html>
