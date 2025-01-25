@@ -137,7 +137,7 @@ selectOpt.addEventListener("change", () => {
 
 btnLightAndDark.addEventListener("click", () => {
   if (btnLightAndDark.textContent === "dark") {
-    main.style.backgroundColor = "#202020cc";
+    main.style.backgroundColor = "#181818";
     btnLightAndDark.textContent = "light";
   } else if (btnLightAndDark.textContent === "light") {
     main.style.backgroundColor = "#d6cfb9c9";
